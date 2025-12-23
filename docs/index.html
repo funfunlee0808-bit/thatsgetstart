@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>品味小舖｜品味評論專頁</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="精選 Google 地圖評論、特色、照片，濃縮品味小舖的人情味。">
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">獨立網站 · GitHub Pages</p>
+        <h1 id="brand-name">品味小舖</h1>
+        <p class="lede" id="brand-description">巷弄裡的溫暖飲品店，收藏最真誠的評論與照片。</p>
+        <div class="hero__badges">
+          <span class="pill pill--accent">Google 精選評論</span>
+          <span class="pill">復古奶茶 · 義式咖啡</span>
+        </div>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#reviews">看看大家怎麼說</a>
+          <a class="btn" href="https://maps.google.com" target="_blank" rel="noreferrer">在地圖查看</a>
+        </div>
+      </div>
+      <div class="hero__panel" aria-hidden="true">
+        <div class="panel__card">
+          <p class="panel__label">社群口碑</p>
+          <p class="panel__value" id="review-count">–</p>
+          <p class="panel__hint">來自 Google 地圖的真實分享</p>
+        </div>
+        <div class="panel__card">
+          <p class="panel__label">熱門關鍵字</p>
+          <p class="panel__value">奶茶 · 咖啡 · CP 值</p>
+          <p class="panel__hint">銅板價、熟悉的復古味</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="highlights" class="section">
+        <div class="section__header">
+          <div>
+            <p class="eyebrow">特色亮點</p>
+            <h2>店家服務一目了然</h2>
+            <p class="section__lede">整理自 Google 商家資訊，快速確認你在乎的細節。</p>
+          </div>
+        </div>
+        <div class="feature-grid" id="feature-grid"></div>
+      </section>
+
+      <section id="reviews" class="section section--muted">
+        <div class="section__header">
+          <div>
+            <p class="eyebrow">評論集錦</p>
+            <h2>真實體驗，最有說服力</h2>
+            <p class="section__lede">從在地嚮導到老主顧，聽聽大家怎麼形容品味小舖。</p>
+          </div>
+          <div class="section__hint" id="review-meta"></div>
+        </div>
+        <div class="review-grid" id="review-grid"></div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="section__header">
+          <div>
+            <p class="eyebrow">現場實景</p>
+            <h2>一眼感受小舖氛圍</h2>
+            <p class="section__lede">菜單、飲品、街景一次看，線上就能感受店裡的溫度。</p>
+          </div>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div>
+          <h3>品味小舖</h3>
+          <p>由 repo 內評論打造的 GitHub Pages 獨立網站，讓好味道被更多人看見。</p>
+        </div>
+        <div class="footer__links">
+          <a href="#highlights">店家特色</a>
+          <a href="#reviews">評論集錦</a>
+          <a href="#gallery">實景照片</a>
+        </div>
+      </div>
+      <p class="footer__note">資料來源：Google 地圖評論 · 本站以靜態檔案生成，方便直接部署到 GitHub Pages。</p>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
