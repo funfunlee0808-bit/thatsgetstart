@@ -43,7 +43,7 @@ const renderHighlights = (rows) => {
 
 const renderPhotos = (rows) => {
   photoGrid.innerHTML = '';
-  const items = rows.filter((row) => sanitize(row['DaSXdd src'])).slice(0, 9);
+  const items = rows.filter((row) => sanitize(row['DaSXdd src'])).slice(0, 8);
   items.forEach((row) => {
     const img = document.createElement('img');
     img.src = sanitize(row['DaSXdd src']);
@@ -64,7 +64,7 @@ const renderReviews = (rows) => {
 
     const avatar = document.createElement('img');
     avatar.className = 'review__avatar';
-    avatar.src = sanitize(row['NBa7we src']) || 'https://placehold.co/104x104/0b1224/FFFFFF?text=T';
+    avatar.src = sanitize(row['NBa7we src']) || 'https://placehold.co/104x104/fff7ed/7c2d12?text=T';
     avatar.alt = `${sanitize(row['d4r55'], '訪客')} 的頭像`;
     avatar.loading = 'lazy';
 
@@ -97,6 +97,17 @@ const renderReviews = (rows) => {
     card.append(header, copy, rating);
     reviewContainer.appendChild(card);
   });
+
+  const cards = Array.from(reviewContainer.querySelectorAll('.review'));
+  if (!cards.length) return;
+
+  const gap = parseFloat(getComputedStyle(reviewContainer).gap) || 0;
+  const visibleCount = Math.min(4, cards.length);
+  const sampleHeight = cards[0].getBoundingClientRect().height;
+  const maxHeight = sampleHeight * visibleCount + gap * (visibleCount - 1);
+
+  reviewContainer.style.maxHeight = `${maxHeight}px`;
+  reviewContainer.style.overflowY = cards.length > visibleCount ? 'auto' : 'visible';
 };
 
 const loadCSV = (url, onComplete) => {
