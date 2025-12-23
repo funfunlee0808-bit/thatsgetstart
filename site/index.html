@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>品味小舖｜Google 評論精選</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Taste Buds Lab Presents</p>
+      <h1>品味小舖</h1>
+      <p class="hero__lead">把 Google 地圖上的真心評論，做成一頁式的小舖風格網站。所有照片、亮點與回饋都來自曾經光顧的客人。</p>
+      <div class="hero__actions">
+        <a class="btn primary" href="#reviews">瀏覽評論</a>
+        <a class="btn ghost" href="#gallery">看看環境</a>
+      </div>
+    </div>
+    <div class="hero__badge">
+      <div class="rating">4.8 ★</div>
+      <div class="meta">來自 Google 地圖的口碑彙整</div>
+    </div>
+  </header>
+
+  <main>
+    <section id="highlights" class="panel">
+      <div class="panel__header">
+        <h2>店家亮點</h2>
+        <p>快速掌握品味小舖在 Google 上的關鍵標籤。</p>
+      </div>
+      <div class="highlight-grid" id="highlightGrid"></div>
+    </section>
+
+    <section id="gallery" class="panel">
+      <div class="panel__header">
+        <h2>精選照片</h2>
+        <p>直接連結自 Google 地圖的實景與菜單。</p>
+      </div>
+      <div class="gallery" id="photoGallery"></div>
+    </section>
+
+    <section id="reviews" class="panel">
+      <div class="panel__header with-controls">
+        <div>
+          <h2>暖心評論</h2>
+          <p>摘錄自 Google 地圖的 37 則真實留言，帶你看見老顧客口中的品味小舖。</p>
+        </div>
+        <div class="controls">
+          <input type="search" id="reviewSearch" placeholder="以關鍵字搜尋評論內容或暱稱…" />
+          <select id="tagFilter">
+            <option value="">全部標籤</option>
+          </select>
+        </div>
+      </div>
+      <div class="review-list" id="reviewList"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h3>品味小舖</h3>
+      <p>以手搖飲與義式咖啡聞名的銅板價小店。這個頁面將 Google 上的評價整理成更易讀的形式，方便分享與瀏覽。</p>
+    </div>
+    <div class="footer__actions">
+      <a class="btn ghost" href="#highlights">回到頂部</a>
+      <a class="btn primary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub Pages</a>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

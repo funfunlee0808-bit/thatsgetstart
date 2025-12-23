@@ -1,0 +1,32 @@
+[
+  {
+    "category": "無障礙程度",
+    "status": "",
+    "label": "無障礙座位"
+  },
+  {
+    "category": "服務項目",
+    "status": "",
+    "label": "外帶"
+  },
+  {
+    "category": "特色",
+    "status": "",
+    "label": "茶種多樣"
+  },
+  {
+    "category": "產品/服務",
+    "status": "",
+    "label": "咖啡"
+  },
+  {
+    "category": "氣氛",
+    "status": "",
+    "label": "休閒"
+  },
+  {
+    "category": "規劃",
+    "status": "",
+    "label": "接受訂位"
+  }
+]
