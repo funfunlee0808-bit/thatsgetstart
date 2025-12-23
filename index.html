@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>品味小舖 Taste House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="eyebrow">品味小舖 · 台中</p>
+      <h1>復古味、銅板價的手搖好店</h1>
+      <p class="lede">品味小舖以 20 年不變的好味道和友善服務，陪伴在地人的青春回憶。無論是古早味奶茶、手沖咖啡或輕鬆外帶，都能在這裡找到屬於你的小確幸。</p>
+      <div class="hero__actions">
+        <a class="button" href="#reviews">看看大家怎麼說</a>
+        <a class="button button--ghost" href="#about">了解店家亮點</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="section__header">
+        <p class="eyebrow">About</p>
+        <h2>店家亮點與服務</h2>
+        <p class="lede">從無障礙空間到多元茶飲，這些是品味小舖吸引熟客回訪的原因。</p>
+      </div>
+      <div id="highlights" class="highlight-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="gallery" class="section section--muted">
+      <div class="section__header">
+        <p class="eyebrow">Gallery</p>
+        <h2>環境與菜單一覽</h2>
+        <p class="lede">還沒來過嗎？先從照片感受這裡的輕鬆氛圍與招牌飲品。</p>
+      </div>
+      <div id="photo-grid" class="photo-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="reviews" class="section">
+      <div class="section__header">
+        <p class="eyebrow">Reviews</p>
+        <h2>來自 Google 地圖的真實聲音</h2>
+        <p class="lede">在地嚮導與熟客分享的第一手心得，陪你找到心目中的完美飲品。</p>
+      </div>
+      <div id="reviews-list" class="reviews" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <div>
+        <p class="eyebrow">品味小舖 Taste House</p>
+        <p>老派風味 · 在地價格 · 親切服務</p>
+      </div>
+      <a class="button button--ghost" href="https://www.google.com/maps" target="_blank" rel="noreferrer">在地圖上查看</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
